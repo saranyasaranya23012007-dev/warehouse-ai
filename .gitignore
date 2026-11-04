@@ -1,0 +1,12 @@
+
+venv/
+__pycache__/
+*.pyc
+.env
+runs/
+cs_lab_dataset/
+dataset/
+final_dataset/
+final_dataset_labels_backup/
+warehouse_dataset/
+warehouse_recovered/
