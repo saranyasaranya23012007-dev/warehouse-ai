@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings | Waresight AI</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <aside class="sidebar" id="sidebar"></aside>
+  <main class="main">
+    <header class="topbar"><div><p class="eyebrow">PREFERENCES</p><h1>Settings</h1><p class="muted">Manage interface preferences for Waresight AI.</p></div></header>
+    <section class="content-grid">
+      <article class="panel">
+        <h3>Application Preferences</h3>
+        <p class="muted">These options are interface demonstrations and are not saved permanently.</p>
+        <div class="category-row"><div class="category-label"><span>Enable notifications</span><input id="notifications" type="checkbox" checked></div></div>
+        <div class="category-row"><div class="category-label"><span>Show image previews</span><input id="previews" type="checkbox" checked></div></div>
+        <div class="category-row"><div class="category-label"><span>Confirm before export</span><input id="confirmExport" type="checkbox"></div></div>
+        <button class="button primary" id="saveSettings" style="margin-top:15px">Save Preferences</button>
+        <p id="settingsMessage" class="muted" style="margin-top:12px"></p>
+      </article>
+      <article class="panel">
+        <h3>AI Configuration</h3>
+        <p class="muted">The AI backend has not been connected yet.</p>
+        <div class="category-row"><div class="category-label"><span>Object detection</span><b>YOLO · Planned</b></div></div>
+        <div class="category-row"><div class="category-label"><span>Text recognition</span><b>OCR · Planned</b></div></div>
+        <div class="category-row"><div class="category-label"><span>Database</span><b>Not connected</b></div></div>
+        <a class="button secondary" href="processing.html">View Processing Pipeline →</a>
+      </article>
+    </section>
+    <section class="panel" style="margin-top:22px">
+      <h3>About Waresight AI</h3>
+      <p class="muted">An image-based warehouse inventory analysis project designed to support object detection, label recognition, and storage insights. Results must be validated against real images before operational use.</p>
+    </section>
+    <footer>© 2026 Waresight AI · Smart Warehouse Analytics</footer>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>

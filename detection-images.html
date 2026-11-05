@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detection Images | Waresight AI</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <aside class="sidebar" id="sidebar"></aside>
+  <main class="main">
+    <header class="topbar"><div><p class="eyebrow">VISUAL INSPECTION</p><h1>Detection Images</h1><p class="muted">Review warehouse photos and future AI detection results.</p></div><a class="button primary" href="upload.html">＋ Add Image</a></header>
+    <section class="panel" style="margin-bottom:22px"><h3>Detection Gallery</h3><p class="muted">These are example warehouse photos, not AI-generated detection results.</p></section>
+    <section class="content-grid">
+      <article class="panel"><img class="warehouse-photo" src="https://images.pexels.com/photos/4483610/pexels-photo-4483610.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Warehouse aisle with racks"><h3 style="margin-top:15px">Warehouse Aisle</h3><p class="muted">Example image · Detection not run</p><span class="badge warning">Awaiting Analysis</span></article>
+      <article class="panel"><img class="warehouse-photo" src="https://images.pexels.com/photos/6169668/pexels-photo-6169668.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Boxes stored on warehouse shelves"><h3 style="margin-top:15px">Storage and Boxes</h3><p class="muted">Example image · Detection not run</p><span class="badge warning">Awaiting Analysis</span></article>
+    </section>
+    <section class="panel"><h3>Expected Detection Output</h3><p class="muted" style="margin-top:8px">After the YOLO model is connected, this page can display bounding boxes, predicted object classes, confidence scores, and cropped label images. OCR text should be marked for manual review whenever it is unreadable or uncertain.</p></section>
+    <footer>© 2026 Waresight AI · Smart Warehouse Analytics</footer>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>

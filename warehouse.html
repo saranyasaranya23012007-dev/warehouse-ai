@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Warehouse | Waresight AI</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="index.html"><span class="brand-icon">W</span><span>Waresight <b>AI</b></span></a>
+    <p class="nav-label">WORKSPACE</p>
+    <nav>
+      <a class="nav-link" href="index.html">▦ &nbsp; Overview</a>
+      <a class="nav-link active" href="warehouse.html">▤ &nbsp; Warehouse</a>
+      <a class="nav-link" href="inventory.html">▣ &nbsp; Inventory</a>
+      <a class="nav-link" href="upload.html">↑ &nbsp; Upload Image</a>
+      <a class="nav-link" href="processing.html">◉ &nbsp; Processing</a>
+      <a class="nav-link" href="detection-images.html">▧ &nbsp; Detection Images</a>
+      <a class="nav-link" href="space-analysis.html">▥ &nbsp; Space Analysis</a>
+      <a class="nav-link" href="sales.html">↗ &nbsp; Sales</a>
+      <a class="nav-link" href="report.html">▤ &nbsp; Reports</a>
+      <a class="nav-link" href="history.html">◷ &nbsp; History</a>
+      <a class="nav-link" href="settings.html">⚙ &nbsp; Settings</a>
+    </nav>
+    <div class="sidebar-bottom"><span class="status-dot"></span><div><strong>Waresight AI</strong><small>Inventory Intelligence</small></div></div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div><p class="eyebrow">FACILITY MANAGEMENT</p><h1>Warehouse Overview</h1><p class="muted">Explore storage areas and organize your inventory.</p></div>
+      <a class="button primary" href="upload.html">＋ Analyze Image</a>
+    </header>
+
+    <section class="welcome">
+      <div class="welcome-content">
+        <span class="pill">WAREHOUSE OPERATIONS</span>
+        <h2>Your warehouse,<br>in clear view.</h2>
+        <p>Review storage conditions and use image analysis to support inventory management.</p>
+        <a class="button light" href="space-analysis.html">Explore Space →</a>
+      </div>
+      <img class="welcome-image" src="https://images.pexels.com/photos/4483610/pexels-photo-4483610.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Warehouse storage aisles">
+    </section>
+
+    <section class="stats-grid">
+      <article class="stat-card"><span class="stat-icon green">▤</span><p>Storage Zones</p><h2>08</h2><small class="muted">Illustrative value</small></article>
+      <article class="stat-card"><span class="stat-icon blue">▣</span><p>Storage Racks</p><h2>124</h2><small class="muted">Illustrative value</small></article>
+      <article class="stat-card"><span class="stat-icon orange">!</span><p>Review Required</p><h2>06</h2><small class="muted">Illustrative value</small></article>
+      <article class="stat-card"><span class="stat-icon purple">▥</span><p>Space Used</p><h2>76%</h2><small class="muted">Illustrative value</small></article>
+    </section>
+
+    <section class="content-grid">
+      <article class="panel">
+        <h3>Main Storage Area</h3>
+        <p class="muted">Warehouse aisle and rack overview</p>
+        <img class="warehouse-photo" style="margin-top:16px" src="https://images.pexels.com/photos/6169668/pexels-photo-6169668.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Storage racks with inventory boxes">
+      </article>
+      <article class="panel">
+        <h3>Warehouse Zones</h3>
+        <p class="muted">Example storage zone register</p>
+        <div class="category-row"><div class="category-label"><span>Zone A — Packaging</span><b>82%</b></div><div class="progress"><span style="width:82%"></span></div></div>
+        <div class="category-row"><div class="category-label"><span>Zone B — Electronics</span><b>68%</b></div><div class="progress"><span style="width:68%"></span></div></div>
+        <div class="category-row"><div class="category-label"><span>Zone C — General</span><b>54%</b></div><div class="progress"><span style="width:54%"></span></div></div>
+        <div class="category-row"><div class="category-label"><span>Zone D — Dispatch</span><b>35%</b></div><div class="progress"><span style="width:35%"></span></div></div>
+      </article>
+    </section>
+
+    <section class="panel">
+      <h3>Storage Zone Register</h3>
+      <p class="muted" style="margin-bottom:15px">Sample zones for the frontend prototype</p>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Zone</th><th>Purpose</th><th>Utilization</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>Zone A</td><td>Packaging</td><td>82%</td><td><span class="badge success">Active</span></td></tr>
+          <tr><td>Zone B</td><td>Electronics</td><td>68%</td><td><span class="badge success">Active</span></td></tr>
+          <tr><td>Zone C</td><td>General inventory</td><td>54%</td><td><span class="badge success">Active</span></td></tr>
+          <tr><td>Zone D</td><td>Dispatch</td><td>35%</td><td><span class="badge warning">Review</span></td></tr>
+        </tbody>
+      </table></div>
+    </section>
+    <footer>© 2026 Waresight AI · Smart Warehouse Analytics</footer>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventory | Waresight AI</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="index.html"><span class="brand-icon">W</span><span>Waresight <b>AI</b></span></a>
+    <p class="nav-label">WORKSPACE</p>
+    <nav>
+      <a class="nav-link" href="index.html">▦ &nbsp; Overview</a>
+      <a class="nav-link" href="warehouse.html">▤ &nbsp; Warehouse</a>
+      <a class="nav-link active" href="inventory.html">▣ &nbsp; Inventory</a>
+      <a class="nav-link" href="upload.html">↑ &nbsp; Upload Image</a>
+      <a class="nav-link" href="processing.html">◉ &nbsp; Processing</a>
+      <a class="nav-link" href="detection-images.html">▧ &nbsp; Detection Images</a>
+      <a class="nav-link" href="space-analysis.html">▥ &nbsp; Space Analysis</a>
+      <a class="nav-link" href="sales.html">↗ &nbsp; Sales</a>
+      <a class="nav-link" href="report.html">▤ &nbsp; Reports</a>
+      <a class="nav-link" href="history.html">◷ &nbsp; History</a>
+      <a class="nav-link" href="settings.html">⚙ &nbsp; Settings</a>
+    </nav>
+    <div class="sidebar-bottom"><span class="status-dot"></span><div><strong>Waresight AI</strong><small>Inventory Intelligence</small></div></div>
+  </aside>
+  <main class="main">
+    <header class="topbar">
+      <div><p class="eyebrow">STOCK MANAGEMENT</p><h1>Inventory Management</h1><p class="muted">Track stock quantities, categories, and item status.</p></div>
+      <a class="button primary" href="upload.html">＋ Scan Inventory</a>
+    </header>
+    <section class="welcome">
+      <div class="welcome-content"><span class="pill">INVENTORY CONTROL</span><h2>Every item.<br>Accounted for.</h2><p>Keep product records organized and identify items that need attention.</p><a class="button light" href="upload.html">Upload Warehouse Image →</a></div>
+      <img class="welcome-image" src="https://images.pexels.com/photos/4483610/pexels-photo-4483610.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Warehouse inventory racks">
+    </section>
+    <section class="stats-grid">
+      <article class="stat-card"><span class="stat-icon green">▣</span><p>Products</p><h2>12,480</h2><small class="muted">Demo value</small></article>
+      <article class="stat-card"><span class="stat-icon blue">✓</span><p>In Stock</p><h2>12,120</h2><small class="muted">Demo value</small></article>
+      <article class="stat-card"><span class="stat-icon orange">!</span><p>Low Stock</p><h2>24</h2><small class="muted">Demo value</small></article>
+      <article class="stat-card"><span class="stat-icon purple">◷</span><p>Needs Review</p><h2>06</h2><small class="muted">Demo value</small></article>
+    </section>
+    <section class="panel">
+      <div class="panel-heading"><div><h3>Inventory Register</h3><p class="muted">Example records — not connected to a database yet</p></div></div>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Item ID</th><th>Product</th><th>Category</th><th>Quantity</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>WH-001</td><td>Storage Box A01</td><td>Packaging</td><td>240</td><td><span class="badge success">In Stock</span></td></tr>
+          <tr><td>WH-002</td><td>Electronic Unit B12</td><td>Electronics</td><td>18</td><td><span class="badge warning">Low Stock</span></td></tr>
+          <tr><td>WH-003</td><td>Container C05</td><td>General</td><td>105</td><td><span class="badge success">In Stock</span></td></tr>
+          <tr><td>WH-004</td><td>Package D07</td><td>Packaging</td><td>0</td><td><span class="badge warning">Out of Stock</span></td></tr>
+        </tbody>
+      </table></div>
+    </section>
+    <footer>© 2026 Waresight AI · Smart Warehouse Analytics</footer>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>
