@@ -1,5 +1,6 @@
-```javascript
+
 document.addEventListener("DOMContentLoaded", function () {
+
   // 1. Highlight current navigation link
   const currentPage =
     window.location.pathname.split("/").pop() || "index.html";
@@ -75,21 +76,76 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (uploadStatus) {
         uploadStatus.textContent =
-          "Image selected successfully. AI analysis is not connected yet.";
+          "Image selected successfully. Click Analyze to detect objects.";
       }
     });
   }
 
-  // 4. Analyze button
+  // 4. Connect Analyze button to FastAPI backend
   if (analyzeButton) {
-    analyzeButton.addEventListener("click", function () {
+    analyzeButton.addEventListener("click", async function () {
+
       if (!fileInput || !fileInput.files.length) {
         alert("Please select a warehouse image first.");
         return;
       }
 
-      window.location.href = "processing.html";
+      const file = fileInput.files[0];
+      const formData = new FormData();
+
+      formData.append("file", file);
+
+      analyzeButton.disabled = true;
+      analyzeButton.textContent = "Analyzing...";
+
+      if (uploadStatus) {
+        uploadStatus.textContent = "AI is analyzing your image. Please wait...";
+      }
+
+      try {
+        const response = await fetch(
+          "http://127.0.0.1:8000/detect",
+          {
+            method: "POST",
+            body: formData
+          }
+        );
+
+        const result = await response.json();
+
+        if (!response.ok) {
+          throw new Error(result.detail || "Detection failed");
+        }
+
+        const objects = result.detected_objects;
+        const objectNames = Object.entries(objects);
+
+        let output = "Detection completed successfully!\n";
+
+        if (objectNames.length === 0) {
+          output += "No objects detected.";
+        } else {
+          objectNames.forEach(function ([name, count]) {
+            output += "\n" + name + ": " + count;
+          });
+        }
+
+        if (uploadStatus) {
+          uploadStatus.textContent = output;
+        }
+
+      } catch (error) {
+        if (uploadStatus) {
+          uploadStatus.textContent = "Error: " + error.message;
+        }
+
+        console.error("Detection error:", error);
+
+      } finally {
+        analyzeButton.disabled = false;
+        analyzeButton.textContent = "Analyze Image";
+      }
     });
   }
+
 });
-```

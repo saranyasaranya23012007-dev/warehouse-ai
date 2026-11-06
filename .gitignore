@@ -10,3 +10,4 @@ final_dataset/
 final_dataset_labels_backup/
 warehouse_dataset/
 warehouse_recovered/
+backend/uploads/
